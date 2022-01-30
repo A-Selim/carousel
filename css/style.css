@@ -1,0 +1,55 @@
+/* Typography */
+h1 {
+    font-size: 2rem;
+    color: royalblue;
+}
+
+/* Layout */
+body{
+    width: 70%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-img {
+    display: none;
+    min-width: 100%;
+}
+
+.active-img {
+    display: block;
+    animation: showImg 800ms;
+}
+
+.carousel-actions {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border: none;
+    background: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+}
+
+@keyframes showImg {
+    0%  {opacity: 0}
+    20% {opacity: 0.2}
+    40% {opacity: 0.4}
+    60% {opacity: 0.6}
+    80% {opacity: 0.8}
+    100% {opacity: 1}
+}
